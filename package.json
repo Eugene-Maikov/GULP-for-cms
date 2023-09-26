@@ -1,14 +1,4 @@
 {
-  "name": "gulp-starter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js/index.js",
-  "scripts": {
-    "start": "gulp",
-    "build": "gulp --production"
-  },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.22.20",
