@@ -1,0 +1,285 @@
+@font-face {
+  src: local("Montserrat"), url("/assets/fonts/Montserrat-Medium.woff2") format("woff2"), url("/assets/fonts/Montserrat-Medium.woff") format("woff"), url("/assets/fonts/Montserrat-Medium.ttf") format("ttf"), url("/assets/fonts/Montserrat-Medium.eot") format("eot");
+  font-family: "Montserrat";
+  font-style: "normal";
+  font-weight: 500;
+}
+
+@font-face {
+  src: local("IdealGothic"), url("/assets/fonts/IdealGothic Bold.woff2") format("woff2"), url("/assets/fonts/IdealGothic Bold.woff") format("woff"), url("/assets/fonts/IdealGothic Bold.ttf") format("ttf"), url("/assets/fonts/IdealGothic Bold.eot") format("eot");
+  font-family: "IdealGothic";
+  font-style: "normal";
+  font-weight: 700;
+}
+
+/* Reset and base styles  */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+:root {
+  --container-width: 1230px;
+  --container-padding: 15px;
+  --font-main: Montserrat, Arial, sans-serif;
+  --dark-color: #191919FF;
+  --light-color: #cecece;
+  --bg-color: #f4e9e9;
+  --text-color: #292B2A;
+  --transition: all .4s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  background: url("../assets/img/main-bg.jpg");
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture img,
+picture source {
+  width: 100%;
+  display: block;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.container {
+  padding: 0 var(--container-padding);
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  fill: var(--text-color);
+}
+
+.logo2 {
+  width: 36px;
+  height: 36px;
+  fill: #9becc2;
+}
+
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.footer {
+  background: var(--light-color);
+  color: var(--text-color);
+  padding: 20px 0;
+}
+
+.header {
+  background: var(--light-color);
+  padding: 20px 0;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__menu-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header__menu-link {
+  color: var(--text-color);
+}
+
+@supports (-webkit-appearance:none) {
+  body {
+    background: url("../assets/img/main-bg.webp");
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 10px 0;
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}

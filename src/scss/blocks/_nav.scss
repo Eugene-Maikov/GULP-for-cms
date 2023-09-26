@@ -1,0 +1,15 @@
+.header__menu {
+  &-list {
+    display: flex;
+  }
+
+  &-item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &-link {
+    color: var(--text-color);
+  }
+}

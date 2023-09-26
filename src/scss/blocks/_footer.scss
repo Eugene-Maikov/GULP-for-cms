@@ -1,0 +1,10 @@
+.footer {
+  background: var(--light-color);
+  color: var(--text-color);
+  padding: 20px 0;
+
+  @media screen and (max-width: 767px) {
+    padding: 10px 0;
+  }
+}
+
