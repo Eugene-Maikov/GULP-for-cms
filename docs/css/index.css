@@ -20,8 +20,7 @@
 }
 
 .swiper-slide {
-  padding: 5px;
-  border: 1px solid var(--dark-color);
+  border: 1px solid var(--gray-color);
 }
 
 @supports (-webkit-appearance:none) {

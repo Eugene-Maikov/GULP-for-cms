@@ -131,9 +131,10 @@ legend {
   --container-padding: 15px;
   --font-main: Montserrat, Arial, sans-serif;
   --dark-color: #191919FF;
-  --light-color: #cecece;
+  --light-color: #ffffff;
   --bg-color: #f4e9e9;
   --text-color: #292B2A;
+  --gray-color: #bdbdbd;
   --transition: all .4s ease-in-out;
 }
 
@@ -227,12 +228,6 @@ picture source {
   overflow-y: hidden;
 }
 
-.footer {
-  background: var(--light-color);
-  color: var(--text-color);
-  padding: 20px 0;
-}
-
 .header {
   background: var(--light-color);
   padding: 20px 0;
@@ -248,6 +243,16 @@ picture source {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.footer {
+  background: var(--light-color);
+  color: var(--text-color);
+  padding: 20px 0;
+}
+
+.footer a {
+  color: var(--text-color);
 }
 
 .header__menu-list {
@@ -271,11 +276,11 @@ picture source {
 }
 
 @media screen and (max-width: 767px) {
-  .footer {
+  .header {
     padding: 10px 0;
   }
 
-  .header {
+  .footer {
     padding: 10px 0;
   }
 

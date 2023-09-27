@@ -20,7 +20,6 @@
     "gulp-replace": "^1.1.4",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^5.1.0",
-    "gulp-sass-glob": "^1.1.0",
     "gulp-svg-sprite": "^2.0.3",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-webp": "^4.0.1",

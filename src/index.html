@@ -1,8 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
-  @@include('include/head.html')
-  <title>Home page</title>
+  @@include('include/head.html', {
+    "title": "Home page"
+  })
+  
   <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/index.css">
@@ -20,7 +22,7 @@
 
       <div class="swiper">
         <div class="swiper-wrapper">
-          @@loop("include/swiper-item.html", "data/test-img.json")
+          @@loop("include/index/swiper-item.html", "data/test-img.json")
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
